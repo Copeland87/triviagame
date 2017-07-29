@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Trivia Game</title>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Raleway|Sigmar+One" rel="stylesheet">
+  <link href="assets/css/reset.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://bootswatch.com/slate/bootstrap.min.css">
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-default">
+
+	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainnavi">
+	  <span class="icon-bar"></span>
+	  <span class="icon-bar"></span>
+	  <span class="icon-bar"></span>
+	</button>
+
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Nerdy Trivia</a>
+      </div>
+      <div class="collapse navbar-collapse" id="mainnavi">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="project/project.html">Projects</a></li>
+          <li><a href="archive/archive.html">Archive</a></li>
+          <li><a href="favorites/favorites.html">Favorite Pages</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <img src="assets/images/banner.png" alt="headerImg" width="100%">
+  </header>
+
+  <div class="container">
+    <button class="btn btn-primary" id="startBtn">Start Game</button>
+
+    <!-- Questions -->
+    <div id="timeLeft"></div>
+    <div id=currentQuestion></div>
+    <div class='question'></div>
+    <div class='answerList'></div>
+
+    <!-- Answers -->
+    <div id=message></div>
+    <div id=correctedAnswer></div>
+    <div id=gif></div>
+
+    <!-- Score -->
+    <div id=finalMessage></div>
+    <div id=correctAnswers></div>
+    <div id=incorrectAnswers></div>
+    <div id=unanswered></div>
+    <div id='startOverBtn'></div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+</body>
+</html>
